@@ -1,0 +1,25 @@
+1. SELECT VegStarters FROM foodmenu (and similarly for other categories like VegSoups, VegMainCourse, NonVegStarters, NonVegSoups, NonvegMainCourse)
+
+These queries retrieve the menu items from the respective categories.
+
+1. SELECT VegStarters, VegSoups, VegMainCourse FROM foodmenu (and similarly for Non-Veg categories)
+
+These queries retrieve all the menu items from the respective categories.
+
+To create the tables and insert sample data, you can use the following SQL queries:
+
+
+CREATE TABLE foodmenu (
+  VegStarters VARCHAR(100),
+  VegSoups VARCHAR(100),
+  VegMainCourse VARCHAR(100),
+  NonVegStarters VARCHAR(100),
+  NonVegSoups VARCHAR(100),
+  NonvegMainCourse VARCHAR(100)
+);
+
+INSERT INTO foodmenu (VegStarters, VegSoups, VegMainCourse, NonVegStarters, NonVegSoups, NonvegMainCourse)
+VALUES 
+('Veg Starter 1', 'Veg Soup 1', 'Veg Main Course 1', 'Non-Veg Starter 1', 'Non-Veg Soup 1', 'Non-Veg Main Course 1'),
+('Veg Starter 2', 'Veg Soup 2', 'Veg Main Course 2', 'Non-Veg Starter 2', 'Non-Veg Soup 2', 'Non-Veg Main Course 2'),
+('Veg Starter 3', 'Veg Soup 3', 'Veg Main Course 3', 'Non-Veg Starter 3', 'Non-Veg Soup 3', 'Non-Veg Main Course 3');
